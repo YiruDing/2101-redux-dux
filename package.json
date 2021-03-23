@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:watch": "node-dev --respawn src/index.js",
+    "start:watch": "node-dev --respawn --notify=false --clear src/index.js",
     "start": "node src/index.js"
   },
   "keywords": [],
@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-dev": "^6.6.0"
+  },
+  "dependencies": {
+    "redux": "^4.0.5"
   }
 }
